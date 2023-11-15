@@ -18,7 +18,7 @@ def select_message_file():
 # define function to select image file
 def select_image_file():
     global image_filename
-    image_filename = filedialog.askopenfilename(filetypes=[('Image files', '*.png;*.jpg;*.jpeg')])
+    image_filename = filedialog.askopenfilename(filetypes=[('Image files', '.png .jpg .jpeg')])
     image_file_label.config(text=image_filename)
     # load image preview
     if image_filename:
